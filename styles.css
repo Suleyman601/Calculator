@@ -1,0 +1,35 @@
+
+#container{
+  width: 35%;
+  height: 400px;
+  background-color:rgba(87,87,87,255);
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  grid-template-areas: "dp dp dp dp"
+                       "dp dp dp dp"
+                       "dp dp dp dp"
+                       ". . clr clr";
+  border-radius: 25px;
+}
+#display{
+  grid-area: dp;
+  background-color: rgba(187,208,191, 2555);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#clr{
+  grid-area: clr;
+}
+
+.btn{
+  text-decoration: none;
+  background-color: rgba(237,237,237,255);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 30px;
+}
