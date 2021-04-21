@@ -1,5 +1,6 @@
 :root{
   background-color: rgb(223, 240, 216);
+  /* background-color: #e5f3e0; */
 }
 #mainContainer{
   margin: 0;
@@ -13,12 +14,13 @@
 }
 
 #container{
-  width: 330px;
-  height: 400px;
+  /* width: 330px;
+  height: 400px; */
   background-color:rgba(87,87,87,255);
   margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 55px 55px 55px 55px;
+  grid-template-rows: 30px 30px repeat(5,35px);
   gap: 20px;
   padding: 20px;
   grid-template-areas: "dp dp dp dp"
@@ -35,18 +37,22 @@
   background-color: rgba(187,208,191, 2555);
   border-radius: 10px;
   font-family: 'orbitron', 'sans-serif';
-  font-size: 20px;
   padding: 0px;
   display: flex;
   align-items:  center;
   justify-content: flex-end;
   box-shadow: 0px 4px 0px #839286, 0px -4px 0px #839286;
+  overflow: hidden;
 }
 
 #display p{
   margin: 0px;
-  font-size: 35px;
+  font-size: 20px;
   padding-right: 5px;
+  font-weight: bold;
+  direction: ltr;
+  white-space: nowrap;
+  unicode-bidi: isolate;
 }
 
 #clr{
